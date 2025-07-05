@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Animated Login form</title>
+  <title>Animated Login Form</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <style>
-    /* 💠 YOUR ORIGINAL STYLE CODE STAYS HERE — unmodified 💠 */
+    /* (Your existing styles remain unchanged) */
     body {
       margin: 0;
       padding: 0;
-      min-height: 100vh;
+      min-height:100vh;
       font-family: sans-serif;
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
@@ -28,7 +28,7 @@
       height: 480px;
       position: relative;
       margin: 6% auto;
-      background: #1b1b1b;
+      background:#1b1b1b;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -67,7 +67,7 @@
     }
     .sp-l {
       left: 0;
-      top: 0;
+      top:0;
       width: 2px;
       height: 200px;
       background: linear-gradient(to top, transparent, #57AAB4, #57AAB4);
@@ -76,32 +76,23 @@
       transform: translateX(-300%);
     }
     @keyframes anim1 {
-      0% {
-        transform: translateY(300%);
-      }
-      100% {
-        transform: translateY(-300%);
-      }
+      0% { transform: translateY(300%); }
+      100% { transform: translateY(-300%); }
     }
     @keyframes anim2 {
-      0% {
-        transform: translateX(300%);
-      }
-      100% {
-        transform: translateX(-300%);
-      }
+      0% { transform: translateX(300%); }
+      100% { transform: translateX(-300%); }
     }
 
     .form-box {
       width: 316px;
       height: 476px;
       position: relative;
-      background: #252525;
+      background:#252525;
       padding: 5px;
       overflow: hidden;
       z-index: 5;
     }
-
     #after {
       width: 50%;
       height: 100%;
@@ -109,36 +100,25 @@
       position: absolute;
       top: 0;
       left: 50%;
-      background: #2d2e30;
-      z-index: -1;
+      background:#2d2e30;
+      z-index:-1;
       transition: 0.5s;
     }
-
     .button-box {
       width: 220px;
       margin: 35px auto 30px auto;
       position: relative;
-      border-radius: 30px;
+      border-radius:30px;
       display: flex;
       justify-content: space-around;
       animation: animBTN 5s linear infinite;
     }
-
     @keyframes animBTN {
-      0% {
-        box-shadow: 0 0 10px 9px rgba(3, 169, 244, 0.3);
-      }
-      33% {
-        box-shadow: 0 0 10px 9px rgba(244, 65, 165, 0.3);
-      }
-      66.9% {
-        box-shadow: 0 0 10px 9px rgba(255, 235, 59, 0.3);
-      }
-      100% {
-        box-shadow: 0 0 10px 9px rgba(3, 169, 244, 0.3);
-      }
+      0% { box-shadow: 0 0 10px 9px rgba(3,169,244,0.3); }
+      33% { box-shadow: 0 0 10px 9px rgba(244,65,165,0.3); }
+      66.9% { box-shadow: 0 0 10px 9px rgba(255,235,59,0.3); }
+      100% { box-shadow: 0 0 10px 9px rgba(3,169,244,0.3); }
     }
-
     .toggle-btn {
       padding: 10px 30px;
       cursor: pointer;
@@ -151,25 +131,22 @@
       position: relative;
       transition: 0.5s;
     }
-
     #btn {
       position: absolute;
       top: 0;
       left: 0;
       width: 110px;
       height: 100%;
-      background: linear-gradient(to left, #57AAB4, #57AAB4);
+      background: linear-gradient(to left, #57AAB4,#57AAB4);
       border-radius: 30px;
       transition: 0.5s;
     }
-
     .social-icons {
       margin: 0 auto;
       text-align: center;
       display: flex;
       justify-content: center;
     }
-
     .icon-link {
       display: flex;
       background: transparent;
@@ -181,43 +158,42 @@
       border-radius: 50%;
       margin: 0px 10px;
       box-shadow: 6px 6px 10px -1px rgba(234, 234, 235, 0.1),
-        -6px -6px 10px -1px rgba(37, 37, 37, 0.7);
-      border: 1px solid rgba(234, 234, 235, 0.09);
+                  -6px -6px 10px -1px rgba(37,37,37,0.7);
+      border: 1px solid rgba(234, 234, 235,0.09);
       transition: transform 0.5s;
     }
-
     .cont-icon {
       color: #57AAB4;
       font-size: 28px;
       transition: transform 0.5s;
     }
-
     .icon-link:hover {
       box-shadow: inset 4px 4px 6px -1px rgba(234, 234, 235, 0.2),
-        inset 4px 4px 6px -1px rgba(37, 37, 37, 0.7), 0 0 5px #57AAB4,
-        0 0 25px #57AAB4, 0 0 50px #57AAB4, 0 0 100px #03e9f4;
+                  inset 4px 4px 6px -1px rgba(37,37,37,0.7),
+                  0 0 5px #57AAB4,
+                  0 0 25px #57AAB4,
+                  0 0 50px #57AAB4,
+                  0 0 100px #03e9f4;
       transform: translateY(2px);
     }
-
     .input-group {
       width: 320px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      top: 180px;
+      top:180px;
       position: absolute;
-      padding: 0 30px;
+      padding:0 30px;
       transition: 0.5s;
       box-sizing: border-box;
     }
-
     .input-field {
       width: 100%;
       padding: 10px 5px;
       margin: 10px 0;
       border-top: 0;
       border-left: 2px solid #57AAB4;
-      border-right: 0;
+      border-right:0;
       border-bottom: 2px solid #57AAB4;
       outline: none;
       background: transparent;
@@ -225,32 +201,33 @@
       font-size: 15px;
       transition: 0.5s;
     }
-
     .submit-btn {
       width: 85%;
       padding: 10px 30px;
       cursor: pointer;
       display: block;
       margin: 30px auto 0 auto;
-      background: linear-gradient(to right, #03a9f4, #57AAB4, #03a9f4);
-      border: 0;
+      background: linear-gradient(to right, #03a9f4,#57AAB4,#03a9f4);
+      border:0;
       outline: none;
       border-radius: 30px;
       position: relative;
       z-index: 5;
       box-sizing: border-box;
-      color: #fff;
+      color:#fff;
       font-weight: bold;
-      font-size: 15px;
+      font-size:15px;
       transition: 0.5s;
     }
-
-    #login {
-      left: 0px;
+    .submit-btn:hover {
+      background:#57AAB4;
+      box-shadow: 0 0 5px #57AAB4,
+                  0 0 25px #57AAB4,
+                  0 0 50px #57AAB4,
+                  0 0 100px #03e9f4;
     }
-    #register {
-      left: 500px;
-    }
+    #login { left: 0px; }
+    #register { left: 500px; }
   </style>
 </head>
 <body>
@@ -264,7 +241,7 @@
           <button id="reg" type="button" class="toggle-btn" onclick="register()">Register</button>
         </div>
 
-        <!-- ✅ Social icons -->
+        <!-- ✅ Social links updated -->
         <div class="social-icons">
           <a class="icon-link" href="https://www.linkedin.com/in/savio-shejo-604a57321/" target="_blank">
             <i class="fab fa-linkedin cont-icon"></i>
@@ -277,24 +254,21 @@
           </a>
         </div>
 
-        <!-- ✅ Updated form -->
-      <form id="login" class="input-group">
-      <input type="text" id="username" class="input-field" placeholder="User" required />
-      <input type="password" id="password" class="input-field" placeholder="Password" required />
-      <input type="submit" class="submit-btn" value="Log in" />
-      </form>
+        <!-- ✅ Login form with input IDs -->
+        <form id="login" class="input-group">
+          <input type="text" id="username" class="input-field" placeholder="User" required />
+          <input type="password" id="password" class="input-field" placeholder="Password" required />
+          <input type="submit" class="submit-btn" value="Log in" />
+        </form>
 
-
-        <!-- ✅ Registration form left unchanged -->
+        <!-- ✅ Register form untouched -->
         <form id="register" class="input-group">
           <input type="text" class="input-field" placeholder="User" required />
           <input type="email" class="input-field" placeholder="Email" required />
-          <input id="pwd" type="password" class="input-field" placeholder="Password" required />
+          <input type="password" class="input-field" placeholder="Password" required />
           <input type="submit" class="submit-btn" value="Register" />
         </form>
       </div>
-
-      <!-- Animation spans -->
       <span class="sp sp-t"></span>
       <span class="sp sp-r"></span>
       <span class="sp sp-b"></span>
@@ -302,7 +276,7 @@
     </div>
   </div>
 
-  <!-- ✅ Form submission script -->
+  <!-- ✅ JS for animation + Google Sheets -->
   <script>
     document.getElementById("login").addEventListener("submit", function(e) {
       e.preventDefault();
